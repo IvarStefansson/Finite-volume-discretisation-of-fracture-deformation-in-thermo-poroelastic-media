@@ -779,7 +779,6 @@ class Granite(pp.Granite):
     def __init__(self, theta_ref=None):
         super().__init__(theta_ref)
         self.BULK_MODULUS = pp.params.rock.bulk_from_lame(self.LAMBDA, self.MU)
-        self.FRICTION_COEFFICIENT = 0.5
         self.PERMEABILITY = 1e-11
 
 
